@@ -2,8 +2,9 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { nprogressPlugin } from "@vuepress/plugin-nprogress";
 import { pwaPlugin } from "@vuepress/plugin-pwa";
-import { seoPlugin } from "vuepress-plugin-seo2";
+import { seoPlugin } from "@vuepress/plugin-seo";
 import { defineUserConfig } from "vuepress";
+import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   
@@ -21,6 +22,8 @@ export default defineUserConfig({
 
   theme: defaultTheme({
         logo: 'logo_worldline.png',
+        repo: 'https://github.com/gbrah/learning-android',
+        repoLabel: 'Contribute!',
 
         sidebar: [
           { text: 'Home', link: '/' },
@@ -31,6 +34,11 @@ export default defineUserConfig({
           "/navigation/",
           "/database/",
         ], 
+  }),
+
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {},
   }),
 
   plugins: [

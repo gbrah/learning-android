@@ -9,6 +9,25 @@ html.dark {
     --c-brand-light: 	#55DD33;
 }
 
+
+:root {
+    // accent colors
+      --vp-c-accent: #3DDC84;
+      --vp-c-accent-bg: #3DDC84;
+      --vp-c-accent-hover: #639756;
+      --vp-c-accent-text: var(--vp-c-white);
+      --vp-c-accent-soft: rgba(55, 183, 113, 0.14);
+}
+
+html.dark {
+        // accent colors
+        --vp-c-accent: #3DDC84;
+        --vp-c-accent-bg: #3DDC84;
+        --vp-c-accent-hover: #639756;
+        --vp-c-accent-text: var(--vp-c-white);
+        --vp-c-accent-soft: rgba(55, 183, 113, 0.14);
+}
+
 iframe {
     width: 100%;
 }
