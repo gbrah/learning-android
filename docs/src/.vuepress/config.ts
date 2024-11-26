@@ -23,7 +23,7 @@ export default defineUserConfig({
   theme: defaultTheme({
         logo: 'logo_worldline.png',
         repo: 'https://github.com/gbrah/learning-android',
-        repoLabel: 'Contribute!',
+        repoLabel: '⭐ Contribute!',
 
         sidebar: [
           { text: 'Home', link: '/' },
